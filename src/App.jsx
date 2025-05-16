@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Only this line changes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { SurveyProvider } from './context/SurveyContext';
 import Home from './pages/Home';
@@ -23,12 +23,12 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowIntro(false);
-    }, 2500);
+    }, 2500); // Animation lasts 2.5 seconds
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <Router basename="/"> {/* Added basename for consistency */}
+    <Router>
       <AuthProvider>
         <SurveyProvider>
           <div className="app-container">
@@ -40,7 +40,50 @@ function App() {
                   transition={{ duration: 0.5 }}
                   className="fixed inset-0 bg-white z-50 flex items-center justify-center"
                 >
-                  {/* Your animation remains unchanged */}
+                  <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ 
+                      scale: 1,
+                      opacity: 1
+                    }}
+                    transition={{
+                      type: 'spring',
+                      stiffness: 300,
+                      damping: 20,
+                      duration: 1
+                    }}
+                    className="flex flex-col items-center"
+                  >
+                    {/* Medical Cross Icon */}
+                    <motion.div
+                      animate={{
+                        scale: [1, 1.1, 1],
+                        opacity: [0.8, 1, 0.8]
+                      }}
+                      transition={{
+                        repeat: Infinity,
+                        duration: 1.5,
+                        ease: "easeInOut"
+                      }}
+                      className="relative w-24 h-24 mb-4"
+                    >
+                      <div className="absolute w-full h-4 bg-blue-600 rounded-full top-1/2 transform -translate-y-1/2"></div>
+                      <div className="absolute h-full w-4 bg-blue-600 rounded-full left-1/2 transform -translate-x-1/2"></div>
+                    </motion.div>
+                    
+                    {/* App Title */}
+                    <motion.h1 
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ 
+                        delay: 0.5,
+                        duration: 0.5 
+                      }}
+                      className="text-2xl font-bold text-gray-800"
+                    >
+                      Maternal Health Survey
+                    </motion.h1>
+                  </motion.div>
                 </motion.div>
               )}
             </AnimatePresence>
