@@ -1,0 +1,85 @@
+
+
+.home-page {
+padding:3rem 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.img {
+  display: block;
+  max-width: 100%;
+  max-height: 60vh;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+    aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-top: 2rem;
+
+}
+
+
+.home-page h1 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.home-page .lead {
+  font-size: 1.25rem;
+  color: #495057;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.research-highlights {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid #eee;
+
+}
+
+.highlight-card {
+  background-color: #f8f9f9;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+margin-top: 2rem;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+
+}
+
+@media (max-width: 768px) {
+  .home-page {
+padding:2rem 0;
+text-align: center;
+  }
+}
+
+.cta-buttons {
+  flex-direction: column;
+}
+
+.research-highlights {
+  margin-top: 2rem;
+}

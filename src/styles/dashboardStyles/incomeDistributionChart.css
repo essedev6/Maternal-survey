@@ -1,0 +1,28 @@
+.income-distribution-chart {
+  width: 100%;
+  max-width: 100%;
+ 
+  padding: 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure the canvas chart inside scales with container */
+.income-distribution-chart canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Optional: Improve layout on small screens */
+@media (max-width: 480px) {
+  .income-distribution-chart {
+    padding: 0.75rem;
+    height: 40vh;
+    padding-top: 2rem;
+ 
+    
+  }
+}

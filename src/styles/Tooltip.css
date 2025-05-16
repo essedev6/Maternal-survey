@@ -1,0 +1,70 @@
+.tooltip-trigger {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.25rem;
+  }
+  
+  .tooltip-icon {
+    color: #3498db;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .tooltip-icon:hover {
+    color: #2980b9;
+  }
+  
+  .research-tooltip {
+    max-width: 300px;
+    padding: 0.5rem;
+  }
+  
+  .tooltip-content {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .tooltip-citation {
+    font-size: 0.75rem;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  .tooltip.show {
+    opacity: 1;
+  }
+  
+  .bs-tooltip-top .tooltip-arrow::before,
+  .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: white;
+  }
+  
+  .bs-tooltip-end .tooltip-arrow::before,
+  .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: white;
+  }
+  
+  .bs-tooltip-bottom .tooltip-arrow::before,
+  .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: white;
+  }
+  
+  .bs-tooltip-start .tooltip-arrow::before,
+  .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: white;
+  }
+  
+  .tooltip-inner {
+    background-color: white;
+    color: #2c3e50;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: none;
+  }
+  
+  @media (max-width: 768px) {
+    .research-tooltip {
+      max-width: 250px;
+    }
+  }

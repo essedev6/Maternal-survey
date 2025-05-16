@@ -1,0 +1,60 @@
+.survey-container {
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.survey-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.survey-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.survey-progress {
+    height: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.survey-progress .progress-bar {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.step-indicator {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.survey-body {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.section-container {
+    from {opacity: 0; transform: translateY(10px);}
+    to  {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 576px) {
+    .survey-body {
+        padding: 1.5rem;
+
+    }
+    .survey-header h2 {
+        font-size: 1.5rem;
+    }
+}

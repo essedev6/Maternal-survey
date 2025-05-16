@@ -1,0 +1,145 @@
+.research-details {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.research-title {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.research-subtitle {
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+.research-highlight-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.key-facts {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f0f7ff;
+  border-radius: 8px;
+}
+
+.key-facts h5 {
+  color: #2980b9;
+}
+
+.research-image-container {
+  position: relative;
+  height: 100%;
+}
+
+.research-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.research-tabs .nav-link {
+  font-weight: 500;
+  color: #7f8c8d;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.research-tabs .nav-link.active {
+  color: #2c3e50;
+  background-color: transparent;
+  border-bottom: 3px solid #3498db;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.key-findings {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.finding-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.finding-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.finding-card h5 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.research-faq {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e8f4fc;
+  color: #2c3e50;
+}
+
+.cta-section {
+  padding: 3rem;
+  background: linear-gradient(135deg, #e8f4fc 0%, #d0e3f7 100%);
+  border-radius: 10px;
+}
+
+.download-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .research-title {
+    font-size: 1.8rem;
+  }
+  
+  .research-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .tab-content {
+    padding: 1.5rem;
+  }
+  
+  .finding-card {
+    margin-bottom: 1rem;
+  }
+}

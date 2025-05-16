@@ -1,0 +1,16 @@
+/* Base styles for survey context wrapper */
+.survey-progress-tracker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ecf0f1;
+    z-index: 1000;
+  }
+  
+  .survey-progress-bar {
+    height: 100%;
+    background: #3498db;
+    transition: width 0.3s ease;
+  }

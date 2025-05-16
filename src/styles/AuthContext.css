@@ -1,0 +1,9 @@
+/* Typically context providers don't need styles, 
+   but you might want to style the auth wrapper */
+   .auth-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+  }

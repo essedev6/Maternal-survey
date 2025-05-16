@@ -1,0 +1,58 @@
+.analytics-container {
+    padding: 2rem 0;
+  }
+  
+  .filter-row {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-row .form-group {
+    margin-bottom: 0;
+  }
+  
+  .analytics-chart {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .analytics-chart h3 {
+    color: #2c3e50;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .insights-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .insights-list li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: #f8f9fa;
+    border-left: 3px solid #3498db;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  
+  .analytics-loading, .analytics-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-row > div {
+      margin-bottom: 1rem;
+    }
+    
+    .analytics-chart {
+      padding: 1rem;
+    }
+  }

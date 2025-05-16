@@ -1,0 +1,62 @@
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f39c12;
+  }
+  
+  .income-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .income-option {
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .income-option:hover {
+    background: #e9ecef;
+  }
+  
+  .income-option.selected {
+    background: #3498db;
+    color: white;
+  }
+  
+  .chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .chip {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+  
+  .chip button {
+    background: none;
+    border: none;
+    color: #0369a1;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 576px) {
+    .income-options {
+      grid-template-columns: 1fr 1fr;
+    }
+  }

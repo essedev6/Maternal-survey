@@ -1,0 +1,60 @@
+.thank-you-container {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .thank-you-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .thank-you-content {
+    text-align: center;
+  }
+  
+  .thank-you-content h1 {
+    color: #2ecc71;
+    margin-bottom: 1.5rem;
+  }
+  
+  .thank-you-content .lead {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 2rem;
+  }
+  
+  .rating-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+  }
+  
+  .research-impact {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .research-impact h4 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .thank-you-card {
+      padding: 2rem;
+    }
+    
+    .rating-section {
+      padding: 1.5rem;
+    }
+  }

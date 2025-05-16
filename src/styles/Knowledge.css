@@ -1,0 +1,77 @@
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2ecc71;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-item input {
+    margin-right: 0.5rem;
+  }
+  
+  .food-frequency-table {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .food-frequency-table th, 
+  .food-frequency-table td {
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  .food-frequency-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  .food-frequency-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .tag-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .tag {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+  
+  .tag button {
+    background: none;
+    border: none;
+    color: #0369a1;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+  }
+  
+  .btn-success:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+  }

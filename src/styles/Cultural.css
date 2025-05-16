@@ -1,0 +1,53 @@
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e74c3c;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-option input {
+    margin-right: 0.5rem;
+  }
+  
+  .textarea-group {
+    margin-top: 1rem;
+  }
+  
+  textarea.form-control {
+    min-height: 100px;
+  }
+  
+  .table-responsive {
+    margin-top: 1rem;
+  }
+  
+  .table {
+    background-color: white;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .radio-group {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .table-responsive {
+      overflow-x: auto;
+    }
+  }

@@ -1,0 +1,38 @@
+.correlation-matrix {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .correlation-matrix h4 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .table th {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+  }
+  
+  .table td {
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .strong-correlation {
+    background-color: rgba(52, 152, 219, 0.3);
+    color: #2c3e50;
+  }
+  
+  .moderate-correlation {
+    background-color: rgba(52, 152, 219, 0.15);
+    color: #2c3e50;
+  }
+  
+  .weak-correlation {
+    background-color: rgba(52, 152, 219, 0.05);
+    color: #7f8c8d;
+  }

@@ -1,0 +1,105 @@
+.research-insights {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insights-tabs .nav-link {
+  color: #495057;
+  font-weight: 500;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.insights-tabs .nav-link.active {
+  color: #0d6efd;
+  background-color: transparent;
+  border-bottom: 3px solid #0d6efd;
+}
+
+.insights-tabs .nav-link:hover:not(.active) {
+  color: #0d6efd;
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.findings-card, .chart-card, .conclusion-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.findings-card:hover, .chart-card:hover, .conclusion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.findings-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.finding-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.finding-item:last-child {
+  border-bottom: none;
+}
+
+.arrow-icon {
+  color: #0d6efd;
+}
+
+.chart-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #f1f3f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.bar-chart::before {
+  content: "Bar Chart Visualization";
+}
+
+.pie-chart::before {
+  content: "Pie Chart Visualization";
+}
+
+.map-chart::before {
+  content: "Map Visualization";
+}
+
+.insight-icon {
+  margin-right: 0.5rem;
+  color: #0d6efd;
+}
+
+.conclusion-card {
+  background-color: #e9f5ff;
+  border-left: 4px solid #0d6efd !important;
+}
+
+@media (max-width: 992px) {
+  .findings-col, .chart-col {
+    margin-bottom: 1.5rem;
+  }
+  
+  .chart-placeholder {
+    height: 250px;
+  }
+}

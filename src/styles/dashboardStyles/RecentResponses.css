@@ -1,0 +1,41 @@
+.recent-responses {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .recent-responses h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .table th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .score-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .score-badge.high {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .score-badge.medium {
+    background-color: #fff8e1;
+    color: #f57f17;
+  }
+  
+  .score-badge.low {
+    background-color: #ffebee;
+    color: #c62828;
+  }
