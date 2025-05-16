@@ -3,10 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Ensure base URL is root
+  base: '/', // Ensure this is set
   build: {
-    outDir: 'dist', // Where build files go
-    emptyOutDir: true // Clear folder before build
+    outDir: 'dist'
   },
   server: {
     proxy: {
