@@ -132,17 +132,19 @@ const Dashboard = () => {
               <ResponseChart data={analytics.responseTrends} />
             </Col>
             <Col md={4}>
-              <DemographicChart data={analytics.demographics} />
+              <DemographicChart data={analytics.culturalFactors} />
             </Col>
           </Row>
         </Tab>
 
         <Tab eventKey="cultural" title="Cultural Factors">
+          <Row className='chart-cultural'>
           <CulturalAnalysis data={analytics.culturalFactors} />
+          </Row>
         </Tab>
 
         <Tab eventKey="economic" title="Economic Factors">
-          <Row>
+          <Row className='chart-economic'>
             <Col md={6}>
               <IncomeDistributionChart data={analytics.incomeDistribution} />
             </Col>
@@ -153,8 +155,10 @@ const Dashboard = () => {
         </Tab>
 
         <Tab eventKey="responses" title="Recent Responses">
+           <Row className='chart-responses'>
           <RecentResponses data={analytics.recentResponses} />
           <DownloadData />
+          </Row>
         </Tab>
       </Tabs>
     </Container>

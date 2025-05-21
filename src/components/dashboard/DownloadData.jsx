@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Table, Spinner, Alert } from 'react-bootstrap';
 import { jsPDF } from 'jspdf';
-import autoTable from 'jspdf-autotable';
+
 import api from '../../services/api';
+import '../../styles/dashboardStyles/DownloadData.css';
 
 const DownloadData = () => {
   const [responses, setResponses] = useState([]);
@@ -208,7 +209,7 @@ const DownloadData = () => {
 
   return (
     <div className="download-data p-4">
-      <h4 className="mb-3">Manage & Download Survey Data</h4>
+      <h4 className="mb-3 download-card">Manage & Download Survey Data</h4>
 
       <Button variant="success" onClick={handleDownloadPDF} className="mb-3">
         📥 Download Full Data as PDF
