@@ -93,7 +93,7 @@ const Dashboard = () => {
         </Col>
       </Row>
 
-      <Tabs activeKey={activeTab} onSelect={(k) => setActiveTab(k)} className="mb-3">
+      <Tabs  activeKey={activeTab} onSelect={(k) => setActiveTab(k)} className="mb-3 tab-card">
         <Tab eventKey="overview" title="Overview">
           <Row className="stats-row">
             <Col md={3}>
@@ -154,7 +154,7 @@ const Dashboard = () => {
           </Row>
         </Tab>
 
-        <Tab eventKey="responses" title="Recent Responses">
+        <Tab  eventKey="responses" title="Recent Responses">
            <Row className='chart-responses'>
           <RecentResponses data={analytics.recentResponses} />
           <DownloadData />

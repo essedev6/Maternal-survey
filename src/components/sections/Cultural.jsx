@@ -1,7 +1,6 @@
 import React from 'react';
 import { Form, Row, Col } from 'react-bootstrap';
 import Tooltip from '../common/Tooltips';
-import { culturalFactorsContent } from '../../utilis/ResearchContent';
 import '../../styles/Cultural.css';
 
 const Cultural = ({ data, onNext, onPrev }) => {
@@ -26,7 +25,7 @@ const Cultural = ({ data, onNext, onPrev }) => {
       
       <Form.Group as={Row} className="mb-3">
         <Form.Label column sm={4}>
-          Importance of traditional food during pregnacy <Tooltip contentKey="culturalFoodImportance" />
+          Do you think traditional food during pregnancy is of importance <Tooltip contentKey="culturalFoodImportance" />
         </Form.Label>
         <Col sm={8}>
           <Form.Select 
@@ -45,7 +44,7 @@ const Cultural = ({ data, onNext, onPrev }) => {
 
       <Form.Group as={Row} className="mb-3">
         <Form.Label column sm={4}>
-          Beneficial cultural practices <Tooltip contentKey="beneficialPractices" />
+          Are you aware of any beneficial cultural practises? <Tooltip contentKey="beneficialPractices" />
         </Form.Label>
         <Col sm={8} className="d-flex align-items-center">
           <Form.Check
@@ -72,7 +71,7 @@ const Cultural = ({ data, onNext, onPrev }) => {
 
       <Form.Group as={Row} className="mb-3">
         <Form.Label column sm={4}>
-          Food restrictions/taboos during pregnancy<Tooltip contentKey="restrictions" />
+          Do you know any food restrictions/taboos during pregnancy? <Tooltip contentKey="restrictions" />
         </Form.Label>
         <Col sm={8} className="d-flex align-items-center">
           <Form.Check
@@ -116,7 +115,7 @@ const Cultural = ({ data, onNext, onPrev }) => {
 
       <Form.Group as={Row} className="mb-3">
         <Form.Label column sm={4}>
-          Influence of family/TBAs <Tooltip contentKey="familyInfluence" />
+          Does influence of family/TBAs have an impact during pregnancy? <Tooltip contentKey="familyInfluence" />
         </Form.Label>
         <Col sm={8}>
           <Form.Select 
@@ -136,7 +135,7 @@ const Cultural = ({ data, onNext, onPrev }) => {
 
       <Form.Group as={Row} className="mb-4">
         <Form.Label column sm={4}>
-          Follow cultural rituals/practises during pregnancy? <Tooltip contentKey="rituals" />
+          Do you have belief in cultural rituals/practises during pregnancy? <Tooltip contentKey="rituals" />
         </Form.Label>
         <Col sm={8} className="d-flex align-items-center">
           <Form.Check
